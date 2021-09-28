@@ -7,6 +7,6 @@
     "bad-words-linter": "./index.js"
   },
   "dependencies": {
-    "vscode-languageserver": "5.2.1"
+    "vscode-languageserver": "^7.0.0"
   }
 }
