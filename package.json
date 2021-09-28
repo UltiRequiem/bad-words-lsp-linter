@@ -1,0 +1,9 @@
+{
+  "name": "bad-words-lsp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "vscode-languageserver": "^7.0.0"
+  }
+}
