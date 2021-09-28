@@ -1,8 +1,11 @@
 {
-  "name": "bad-words-lsp",
+  "name": "bad-words-linter",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "bad-words-linter": "./index.js"
+  },
   "dependencies": {
     "vscode-languageserver": "^7.0.0"
   }
