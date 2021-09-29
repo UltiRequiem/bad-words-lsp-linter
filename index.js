@@ -8,7 +8,7 @@ const {
 
 const blacklist = require("./badWords.js");
 
-const getBlacklisted = (text) => {
+function getBlacklisted(text) {
   const regex = new RegExp(`\\b(${blacklist.join("|")})\\b`, "gi");
 
   const results = [];
@@ -22,7 +22,7 @@ const getBlacklisted = (text) => {
   }
 
   return results;
-};
+}
 
 const blacklistToDiagnostic =
   (textDocument) =>

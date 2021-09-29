@@ -1,9 +1,9 @@
 const fs = require("node:fs");
+const path = require("node:path");
 
 function getBadWords() {
-  return fs
-    .readFileSync(`${__dirname}/ListOfBadWords.txt`, { encoding: "utf8" })
-    .split("\n");
+  const file = path.resolve(`${__dirname}/ListOfBadWords.txt`);
+  return fs.readFileSync(file, { encoding: "utf8" }).split("\n");
 }
 
 const badWords = getBadWords();
