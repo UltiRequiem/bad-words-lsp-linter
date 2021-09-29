@@ -7,6 +7,12 @@
 
 ![Screenshot](./screenshot.png)
 
+## Installation
+
+```bash
+yarn global add bad-words-linter
+```
+
 ## Usage
 
 Whit [coc.nvim](https://github.com/neoclide/coc.nvim):
