@@ -1,12 +1,8 @@
 #!/usr/bin/env node
 
-const {
-  DiagnosticSeverity,
-  TextDocuments,
-  createConnection,
-} = require("vscode-languageserver");
+import {DiagnosticSeverity, TextDocuments, createConnection} from "vscode-languageserver";
 
-const blacklist = require("./badWords.js");
+import blacklist from "./badWords.js";
 
 function getBlacklisted(text) {
   const regex = new RegExp(`\\b(${blacklist.join("|")})\\b`, "gi");

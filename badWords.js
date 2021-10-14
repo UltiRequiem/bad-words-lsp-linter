@@ -1,11 +1,14 @@
-const fs = require("node:fs");
-const path = require("node:path");
+import { readFileSync } from "node:fs";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 function getBadWords() {
-  const file = path.resolve(`${__dirname}/ListOfBadWords.txt`);
-  return fs.readFileSync(file, { encoding: "utf8" }).split("\n");
+  const file = resolve(
+    `${dirname(fileURLToPath(import.meta.url))}/ListOfBadWords.txt`
+  );
+  return readFileSync(file, { encoding: "utf8" }).split("\n");
 }
 
 const badWords = getBadWords();
 
-module.exports = badWords;
+export default badWords;
