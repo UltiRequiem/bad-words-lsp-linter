@@ -15,7 +15,7 @@ yarn global add bad-words-linter
 
 ## Usage
 
-Whit [coc.nvim](https://github.com/neoclide/coc.nvim):
+With [coc.nvim](https://github.com/neoclide/coc.nvim):
 
 ```json
 "languageserver": {
